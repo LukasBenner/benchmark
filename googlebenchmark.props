@@ -6,18 +6,18 @@
     <LibraryType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Release</LibraryType>
   </PropertyGroup>
   <ItemGroup>
-  <BenchmarkLibs Include="$(MSBuildThisFileDirectory)\lib\x64\$(LibraryType)\*.lib" />
+  <BenchmarkLibs Include="$(MSBuildThisFileDirectory)\native\x64\$(LibraryType)\*.lib" />
   </ItemGroup>
   <PropertyGroup>
     <!-- Expland the items to a property -->
     <BenchmarkLibraries>@(BenchmarkLibs)</BenchmarkLibraries>
     </PropertyGroup>
     <ItemDefinitionGroup>
-    <ClCompile>   <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)\include</AdditionalIncludeDirectories>
+    <ClCompile>   
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)\native\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>$(BenchmarkLibraries);%(AdditionalDependencies) 
-      </AdditionalDependencies>
+      <AdditionalDependencies>$(BenchmarkLibraries);Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
 </Project>
