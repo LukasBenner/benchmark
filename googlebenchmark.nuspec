@@ -3,11 +3,15 @@
   <metadata>
     <id>googlebenchmark</id>
     <version>1.8.0.1</version>
-    <description>Google Benchmark</description>
+    <description>
+Google Benchmark - A microbenchmark support library.
+This is a fork of the official repository.
+    </description>
     <authors>Lukas Benner, Google</authors>
     <repository type="git" url="https://github.com/LukasBenner/benchmark.git" branch="nuget" />
-    <readme>docs\README.md</readme>
-    <tags>Native, native</tags>
+    <readme>docs/README.md</readme>
+    <license type="file">docs/LICENSE</license>
+    <tags>Native, native, c++, benchmark, google</tags>
   </metadata>
 
   <files>
@@ -22,5 +26,6 @@
     
     <file src="docs\*"   target="docs"    />
     <file src="README.md" target="docs/" />
+    <file src="LICENSE*" target="docs/" />
   </files>
 </package>
