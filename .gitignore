@@ -65,3 +65,4 @@ CMakeSettings.json
 # Python build stuff
 dist/
 *.egg-info*
+*.nupkg

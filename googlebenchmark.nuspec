@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>googlebenchmark</id>
-    <version>1.8.0.1</version>
+    <version>1.8.0.1-v142</version>
     <description>
 Google Benchmark - A microbenchmark support library.
 This is a fork of the official repository.
