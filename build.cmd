@@ -15,4 +15,4 @@ cmake --build "build" --config Debug --parallel 4
 nuget pack .\googlebenchmark.nuspec -OutputDirectory nuget
 
 
-@rem nuget push .\nuget\googlebenchmark.*.nupkg -Source https://api.nuget.org/v3/index.json -ApiKey
+@rem nuget push .\nuget\googlebenchmark.*.nupkg -Source https://api.nuget.org/v3/index.json -SkipDuplicate -ApiKey
