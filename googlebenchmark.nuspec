@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>googlebenchmark</id>
-    <version>1.8.3-v142</version>
+    <version>1.8.3.1</version>
     <description>
 Google Benchmark - A microbenchmark support library.
 This is a fork of the official repository.
@@ -16,6 +16,7 @@ This is a fork of the official repository.
 
   <files>
     <file src="googlebenchmark.props" target="build" />  
+    <file src="googlebenchmark.targets" target="build" />  
 
     <!-- headers -->
     <file src="include\**\*.h"  target="build/native/include" />
@@ -23,6 +24,7 @@ This is a fork of the official repository.
     <!-- libs -->
     <file src="build\src\Release\*.lib"  target="build/native/x64/Release" />
     <file src="build\src\Debug\*.lib"  target="build/native/x64/Debug" />
+    <file src="build\src\Debug\*.pdb"  target="build/native/x64/Debug" />
     
     <file src="docs\*"   target="docs"    />
     <file src="README.md" target="docs/" />
